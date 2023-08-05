@@ -28,5 +28,19 @@ int main(void)
 		printf ("Writing %d\n", array[i]);
 	}
 	close(fd);
+	fd = open("pipe", O_RDONLY);
+	if (fd == -1)
+	{
+		perror("open");
+		exit(EXIT_FAILURE);
+	}
+	int total;
+	if (read(fd, &total, sizeof(total)) == -1)
+	{
+		perror("read");
+		return (EXIT_FAILURE);
+	}
+	printf("The total of generated random numbers is : %d\n", total);
+	close(fd);
 	return (0);
 }

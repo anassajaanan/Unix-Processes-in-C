@@ -8,6 +8,7 @@
 int main(void)
 {
 	int num;
+	int sum = 0;
 	int fd = open("pipe", O_RDONLY);
 	if (fd == -1)
 	{
@@ -22,6 +23,19 @@ int main(void)
 			return (EXIT_FAILURE);
 		}
 		printf("Recieving : %d\n", num);
+		sum += num;
+	}
+	close(fd);
+	fd = open("pipe", O_WRONLY);
+	if (fd == -1)
+	{
+		perror("open");
+		return (EXIT_FAILURE);
+	}
+	if (write(fd, &sum, sizeof(sum)) == -1)
+	{
+		perror("write");
+		return (EXIT_FAILURE);
 	}
 	close(fd);
 	return (0);
