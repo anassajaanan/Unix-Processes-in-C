@@ -1,0 +1,11 @@
+The fd of the file is : 2
+total 16
+drwxr-xr-x   9 aajaanan  2023_abu-dhabi   306 Aug  5 09:19 .
+drwxr-xr-x  51 aajaanan  2023_abu-dhabi  1802 Aug  6 11:46 ..
+-rw-r--r--@  1 aajaanan  2023_abu-dhabi  6148 Aug  6 09:09 .DS_Store
+drwxr-xr-x  10 aajaanan  2023_abu-dhabi   340 Aug  1 06:30 42
+drwxr-xr-x  17 aajaanan  2023_abu-dhabi   578 Aug  3 19:38 42-EXAM
+drwxr-xr-x   8 aajaanan  2023_abu-dhabi   272 Aug  4 21:07 mini
+drwxr-xr-x  11 aajaanan  2023_abu-dhabi   374 Aug  4 08:40 ms
+drwxr-xr-x  10 aajaanan  2023_abu-dhabi   340 Aug  4 08:57 ms2
+drwxr-xr-x  10 aajaanan  2023_abu-dhabi   340 Aug  6 09:56 pipes
